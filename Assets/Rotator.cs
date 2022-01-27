@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeScript : MonoBehaviour
+public class Rotator : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,6 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Transform>().Rotate()
+        this.GetComponent<Transform>().Rotate(0, 0.1f, 0);
     }
 }
